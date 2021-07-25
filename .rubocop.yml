@@ -32,3 +32,6 @@ Layout/LineLength:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+
+Style/ClassAndModuleChildren:
+  Enabled: false
