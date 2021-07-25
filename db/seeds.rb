@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+movie = Movie.find_or_create_by(title: 'The Fast and the Furious', imdb_id: 'tt0232500')
+Showtime.find_or_create_by({movie: movie, time: DateTime.new(2012, 8, 29, 22, 35, 0), price: 13.6})
+Showtime.find_or_create_by({movie: movie, time: DateTime.new(2012, 8, 30, 22, 35, 0), price: 15.6})
