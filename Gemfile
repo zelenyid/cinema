@@ -36,6 +36,7 @@ group :development, :test do
   gem 'rubocop-rspec', '~> 2.3'
 
   gem 'fasterer', '~> 0.9.0'
+  gem 'overcommit', '~> 0.30.0'
 end
 
 group :development do
