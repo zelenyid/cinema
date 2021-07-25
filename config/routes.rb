@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :showtimes, only: %i[update]
 
   get 'movies/:id/movie_times', to: 'movie#movie_times'
+  get 'movies/movie_details', to: 'movie#movie_details'
 end

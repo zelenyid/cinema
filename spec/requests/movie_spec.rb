@@ -16,4 +16,12 @@ RSpec.describe 'Movie controller', type: :request do
       expect(response.status).to eq(200)
     end
   end
+
+  describe '#movie_details' do
+    it 'succeeds' do
+      get '/movies/movie_details', params: { imdb_id: 'tt0322259' }
+
+      expect(response.status).to eq(200)
+    end
+  end
 end
