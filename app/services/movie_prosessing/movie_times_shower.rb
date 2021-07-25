@@ -8,15 +8,19 @@ class MovieProsessing::MovieTimesShower
   def initialize(movie_id)
     super()
 
-    @movie_id = movie_id
+    @movie = movie(movie_id)
   end
 
   def movie_times
-    Movie.find(@movie_id).showtimes.map do |movie|
+    @movie.showtimes.map do |movie|
       {
         time: movie.time,
         price: movie.price
       }
     end
+  end
+
+  def movie(movie_id)
+    Movie.find(movie_id)
   end
 end
