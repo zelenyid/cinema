@@ -34,6 +34,8 @@ group :development, :test do
   gem 'rubocop-performance', '~> 1.11', '>= 1.11.3'
   gem 'rubocop-rails', '~> 2.10', '>= 2.10.1'
   gem 'rubocop-rspec', '~> 2.3'
+
+  gem 'fasterer', '~> 0.9.0'
 end
 
 group :development do
