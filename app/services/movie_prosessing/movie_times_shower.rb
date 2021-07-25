@@ -20,6 +20,8 @@ class MovieProsessing::MovieTimesShower
     end
   end
 
+  private
+
   def movie(movie_id)
     Movie.find(movie_id)
   end
