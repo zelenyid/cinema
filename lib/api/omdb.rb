@@ -15,6 +15,14 @@ module Api
     end
 
     def movie(imdb_id)
+      Rails.cache.fetch("#{imdb_id}/movie", expires_in: 12.hours) do
+        movie_details(imdb_id)
+      end
+    end
+
+    private
+
+    def movie_details(imdb_id)
       query = {
         i: imdb_id
       }
