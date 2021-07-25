@@ -12,7 +12,7 @@ Test project was used:
   - annotate
   - rspec
  
-As database was used postgresql. Realized best practices to write logic in services. Working with API was realized in lib with gem httpart. Also was used rubocop, fasterer, overcommit for writing more clean and effective code.
+I chose PostgreSQL as a database. Realized best practices moving business logic to services. Also, I used httpart gem for API, and rubocop, fasterer, overcommit to make code cleaner and more effective.
 
 ### Database structure: 
   - Movies (id: integer, title: string, imdb_id: string); 
@@ -33,5 +33,3 @@ As database was used postgresql. Realized best practices to write logic in servi
 
 ### Run specs
 `rspec`
-
-Not realized swagger documantating, for finishing need to add specs for swagger documentating and it needs a little bit more time. And also we need to create roles for cinema owners and moviegoers, for it we need to create a basic authorization and use gem cancancan to allow all endpoint for cinema owners and deny endpoint update in showtimes controller
